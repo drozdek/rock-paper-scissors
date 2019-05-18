@@ -23,7 +23,7 @@ export default class Player extends Component {
        * apply props playerWeapon 
        */}
         <div>
-          <img className="App__player__image--adjust" src={this.props.playerWeapon + '.png'} alt={"Image of " +this.props.playerWeapon+ ".png"} />
+          <img className="App__image--adjust" src={this.props.playerWeapon + '.png'} alt={"Image of " +this.props.playerWeapon+ ".png"} />
         </div>
       </div>
     )
