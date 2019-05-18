@@ -7,7 +7,7 @@ export default class Player extends Component {
   render() {
     return (
       <div className="App__player">
-        <div className="">player</div>
+        <div className="" >{this.props.playerWeapon}</div>
       </div>
     )
   }

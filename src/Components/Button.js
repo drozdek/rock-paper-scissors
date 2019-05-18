@@ -13,7 +13,7 @@ export default class Button extends Component {
   render() {
     return (
       <div>
-        <button className="App__button" onClick={this.runGame}> Play </button>
+        <button className="App__button"> Play </button>
       </div>
     )
   }
