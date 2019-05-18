@@ -6,32 +6,22 @@ import './App.css';
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.weapons = ["rock", "paper", "scissors"];
-    this.weaponUsed = Math.floor(Math.random() * 3);
-    this.runGame = this.runGame.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  generateRandomElements(e) {
-    this.weapons = ["rock", "paper", "scissors"];
-    this.weaponUsed = Math.floor(Math.random() * 3);
-    console.log(this.weapons[this.weaponUsed]);
-  }
+  handleClick(e){
+  console.log('run');
+  alert('ff');
+}
 
-  runGame(){    
-    this.setState({
-      playerWeapon1 :  this.generateRandomElements(),
-      playerWeapon2 :  this.generateRandomElements(),
-    })
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Player className="App__player" playerWeapon1="paper" />
-        <Player className="App__player" playerWeapon2="rock" />
-        <button className="App__button"  onClick={this.runGame}>Play </button>
-      </div>
-    );
-  }
+render(){
+  return (
+    <div className="App">
+      <Player className="App__player"/>
+      <Player className="App__player"/>
+      <Button className="App__button"/>
+    </div>
+  );
+}
 }
 
