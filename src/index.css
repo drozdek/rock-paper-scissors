@@ -29,7 +29,11 @@ body {
   height: 300px;
   width: 300px;
   display: inline-block;
-  background-color: #ee6969;
+}
+
+.App__image--adjust {
+  width: 100%;
+  height: 100%;
 }
 
 .App__button {

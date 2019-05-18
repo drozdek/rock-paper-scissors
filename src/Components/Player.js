@@ -19,10 +19,12 @@ export default class Player extends Component {
     return (
       <div className="App__player">
 
-      {/** 
+        {/** 
        * apply props playerWeapon 
-       */}      
-        <div>{this.props.playerWeapon}</div>
+       */}
+        <div>
+          <img className="App__image--adjust" src={this.props.playerWeapon + '.png'} alt={"Image of " +this.props.playerWeapon+ ".png"} />
+        </div>
       </div>
     )
   }
