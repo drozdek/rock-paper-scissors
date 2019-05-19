@@ -6,7 +6,9 @@ Built in react.js Rock Paper Scissors game.
 
 In the project directory, you can run:
 
+```
 npm start
+```
 
 This runs the app in the development mode.
 Now open http://localhost:3000 to view it in the browser (if it is not being opened automatically).
@@ -19,7 +21,7 @@ You will also see any lint errors in the console.
 To have Rock Paper Scissors game working you need to have Node installed on your system.
 
 ```
-[Node](https://nodejs.org/en/)
+* [Node](https://nodejs.org/en/)
 ```
 
 ### Installing
@@ -38,7 +40,7 @@ This will install all the necessary packages to run the game on your system.
 
 ## Authors
 
-* **Rafal Drozdowski** - *all aspects* - [PurpleBooth](https://rdrozdowski.github.io/Home)
+* **Rafal Drozdowski** - *all aspects* - [github](https://github.com/drozdek)
 
 
 ## License
