@@ -20,9 +20,7 @@ You will also see any lint errors in the console.
 
 To have Rock Paper Scissors game working you need to have Node installed on your system.
 
-```
 * [Node](https://nodejs.org/en/)
-```
 
 ### Installing
 
@@ -49,5 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Have a sip of strong coffee
+* Caffeine
 * React & js
+* BEM
