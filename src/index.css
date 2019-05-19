@@ -28,7 +28,8 @@ body {
 .App__player {
   height: 300px;
   width: 300px;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .App__image--adjust {

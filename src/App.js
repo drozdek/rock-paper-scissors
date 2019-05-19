@@ -55,31 +55,31 @@ export default class App extends Component {
     // in case of weapons have the same values
     if ((weapon1 === weapon2) || (weapon2 === weapon1)) {
       this.setState({
-        winner: 'tie'
+        winner: ' It\'s a tie'
       })
     }
 
     // in case if paper interacts with scissors or opposite
-    if ((weapon1 === "paper" && weapon2 === "scissors") ||
+    else if ((weapon1 === "paper" && weapon2 === "scissors") ||
       (weapon1 === "scissors" && weapon2 === "paper")) {
       this.setState({
-        winner: 'scissors'
+        winner: 'Scissors win'
       })
     }
 
     // in case if paper interacts with rock or opposite
-    if ((weapon1 === "paper" && weapon2 === "rock") ||
+    else if ((weapon1 === "paper" && weapon2 === "rock") ||
       (weapon1 === "rock" && weapon2 === "paper")) {
       this.setState({
-        winner: 'paper'
+        winner: 'Paper wins'
       })
     }
 
     // in case if scissors interacts with rock or opposite
-    if ((weapon1 === "scissors" && weapon2 === "rock") ||
+    else if ((weapon1 === "scissors" && weapon2 === "rock") ||
       (weapon1 === "rock" && weapon2 === "scissors")) {
       this.setState({
-        winner: 'rock'
+        winner: 'Rock wins'
       })
     }
   }
@@ -99,7 +99,7 @@ export default class App extends Component {
         {/**
          * display result
          */}
-        <p>Battle has won: <b>{this.state.winner}</b></p>
+        <p><b>{typeof this.state.winner === "undefined" ? 'Have a play, please...' : this.state.winner}</b></p>
         
         {/**
         *show clickable button
