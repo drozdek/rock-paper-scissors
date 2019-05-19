@@ -18,11 +18,10 @@ body {
   -webkit-align-items: center;
   justify-content: center;
   -webkit-justify-content: center;
-
 }
+
 .App {
   padding: 5px;
-  border: 1px solid #000000;
 }
 
 .App__player {

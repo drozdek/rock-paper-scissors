@@ -56,7 +56,7 @@ export default class App extends Component {
     if ((weapon1 === weapon2) || (weapon2 === weapon1)) {
       this.setState({
         winner: ' It\'s a tie'
-      })
+      });
     }
 
     // in case if paper interacts with scissors or opposite
@@ -64,7 +64,7 @@ export default class App extends Component {
       (weapon1 === "scissors" && weapon2 === "paper")) {
       this.setState({
         winner: 'Scissors win'
-      })
+      });
     }
 
     // in case if paper interacts with rock or opposite
@@ -72,7 +72,7 @@ export default class App extends Component {
       (weapon1 === "rock" && weapon2 === "paper")) {
       this.setState({
         winner: 'Paper wins'
-      })
+      });
     }
 
     // in case if scissors interacts with rock or opposite
@@ -80,7 +80,7 @@ export default class App extends Component {
       (weapon1 === "rock" && weapon2 === "scissors")) {
       this.setState({
         winner: 'Rock wins'
-      })
+      });
     }
   }
 
