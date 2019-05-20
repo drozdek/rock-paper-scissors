@@ -17,9 +17,13 @@ describe('Rock, paper, scissors game', () => {
   });
 
   test('has Play button', () => {
-      const wrapper = shallow(<App />);
-      expect(wrapper.text().includes('Play')).toBe(true);
+    const wrapper = shallow(<App />);
+    expect(wrapper.text().includes('Play')).toBe(true);
   });
 
+  test('simpulates click', () => {
+    const wrapper = shallow(<App />);
+    wrapper.find('button').simulate('click');
+  })
 });
 
