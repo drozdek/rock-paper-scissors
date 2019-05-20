@@ -32,6 +32,25 @@ npm install
 
 This will install all the necessary packages to run the game on your system.
 
+### Testing
+
+Testing framewor by choice is Jest - fully adjustable swiss knife. 
+
+* [Jest](https://jestjs.io/)
+
+To test the game, run cmd
+
+```
+npm run test
+```
+ Creates a snapshot, and detects for any changes.
+ 
+ ```
+npm run test:update
+```
+
+Updates snapshot if required.
+
 ## Built With
 
 * [React](https://reactjs.org/) - Used to create SPAs 
@@ -49,4 +68,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Caffeine
 * React & js
+* Jest
 * BEM
