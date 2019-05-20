@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rock, paper, scissors game creates snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="App__player"
+  >
+    <div>
+      <img
+        alt="Image of undefined.png"
+        className="App__image--adjust"
+        src="undefined.png"
+      />
+    </div>
+  </div>
+  <div
+    className="App__player"
+  >
+    <div>
+      <img
+        alt="Image of undefined.png"
+        className="App__image--adjust"
+        src="undefined.png"
+      />
+    </div>
+  </div>
+  <p>
+    <b>
+      Have a play, please...
+    </b>
+  </p>
+  <button
+    className="App__button"
+    onClick={[Function]}
+  >
+     Play 
+  </button>
+</div>
+`;
