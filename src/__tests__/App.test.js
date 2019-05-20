@@ -10,20 +10,20 @@ describe('Rock, paper, scissors game', () => {
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
-  test('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-
   test('has Play button', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.text().includes('Play')).toBe(true);
+    expect(wrapper.find('button').length).toBe(1);
   });
 
-  test('simpulates click', () => {
+  test('we have 2 players', () => {
+    const wrapper = shallow(<App />);
+    const img = wrapper.find('.App__player').length;
+    expect(img).toBe(2);
+  })
+
+  test('simulates click', () => {
     const wrapper = shallow(<App />);
     wrapper.find('button').simulate('click');
-  })
+  });
 });
 
