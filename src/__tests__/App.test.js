@@ -21,7 +21,7 @@ describe('Rock, paper, scissors game', () => {
     expect(img).toBe(2);
   })
 
-  test('simulates click', () => {
+  test('simulates click and sets state via setState', () => {
     const wrapper = shallow(<App />);
     const button = wrapper.find('button');    
     button.simulate('click');
