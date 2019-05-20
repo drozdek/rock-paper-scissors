@@ -23,7 +23,16 @@ describe('Rock, paper, scissors game', () => {
 
   test('simulates click', () => {
     const wrapper = shallow(<App />);
-    wrapper.find('button').simulate('click');
-  });
+    const button = wrapper.find('button');    
+    button.simulate('click');
+
+    wrapper.setState({
+      playerWeapon1: 'rock',
+      playerWeapon2: 'paper',
+    });    
+
+    console.debug(wrapper.state());
+});
+
 });
 
